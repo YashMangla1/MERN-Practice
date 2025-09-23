@@ -51,6 +51,9 @@ Branches in Git
 6. Creates a merge commit, retains all history: git checkout main, git merge feature/login
 7. Rebasing: git checkout feature/login, git rebase main
 
+8. Switch to existing feature branch: git checkout feature-branch-name
+9. Merge your feature branch: git checkout main, git pull origin main, git merge feature-branch-name, git push origin main(Push updated main to remote)
+
 Troubleshooting Commands
 
 1. Check last 5 commits: git log —oneline -5
