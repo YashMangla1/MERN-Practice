@@ -1,6 +1,6 @@
 Git & Github
 
-Concept Explanation
+Concept Explanation:
 Repository (Repo) A project folder tracked by Git. Local vs Remote (GitHub)
 Commit A snapshot of your code at a point in time
 Branch Parallel version of the repo (like a feature line)
@@ -18,6 +18,8 @@ HEAD Pointer to current commit
 7. Stages everything: git add .
 8. Create the local commit: git commit -m “ commit message”
 9. Push to Github: git push origin main
+
+10. Check if branch exists or not: git branch -r | feature-branch-name
 
 What’s the Git Pull?
 
@@ -115,3 +117,5 @@ feature: X'---Y'
 X' and Y' are rebased copies of your original commits X and Y.
 
 - History looks clean, as if you started your work after the latest main commit.
+- git rebase changes the base of our feature branch into the latest commit on main and then repays the changes from there,it gives clean, straightforward history. We use git rebase to move our feature branch's changes on tip of main and then perform a fast-forward merge.
+  -Squash commits: with squashing,all the feature branch commits are squeezed into a single commit when merged into main. This gives Main's histroy linear like rebasing, while still creating a single merge commit. but we loose the fine deatils of individual feature commits in the main branch history.
