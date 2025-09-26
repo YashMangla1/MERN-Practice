@@ -92,8 +92,23 @@ Lesson -3 State
 
 step-1 :first we need to save the data in the variables. data=information, data- message and sender
 Step-2: Generate the HTML
+Step-3: Make it interactive
 
-{}- save the result of the code into the prop
+-object - group the related values together, group the message and sender together.
+
+Array.map- lets us go through each value of an array and convert it into a new value.
+
+{}- save the result of the code into the prop, save any type of value in a prop (including a function).
 ''- save the value of the code into the prop
 
--Error: Each child in a list should have a unique key prop. In, react if we insert an array of components, we need to give each component a prop called key. The key helps React track changes in the array.
+-Error: Each child in a list should have a unique key prop. In, react if we insert an array of components, we need to give each component a prop called key. The key helps React track changes in the array.So, we should assign each component a unique key.
+
+
+Event Handlers: it runs a function when we interact with the website
+onlick is known an event and sendMessage(a function) is known as event Handler, it does something when onClick event happens or it handles the event.
+<button onClick={sendMessage}></button>
+<button onClick={sendMessage()}></button> wrond approach, we should not use brackets for the function as it will run the function and result will be undefined. it will save undefined in onClick and it will not run.
+
+.push add a value to the end of an array
+
+State= State is data that is connnected to the HTML, when we update the data it will update the HTML.
